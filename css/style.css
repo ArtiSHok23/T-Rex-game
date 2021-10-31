@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    padding-top: 200px;
+}
+.border {
+    border: 3px solid #111;
+    height: 400px;
+    width: 1400px;
+    margin: 0 auto;
+}
+.dinosaur {
+    position: relative;
+    height: 30px;
+}
