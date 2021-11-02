@@ -8,9 +8,9 @@
     position: relative;
     height: 60px;
     width: 60px;
-    background: #111;
+    background: rgb(109, 51, 51);
     left: 0px;
-    top: 242px;
+    top: 240px;
 }
 .jump {
     animation: jump 0.3s linear;
@@ -20,9 +20,26 @@
         top: 242px;
     }
     50% {
-        top: 162px;
+        top: 165px;
     }
     100% {
-        top: 242;
+        top: 242px;
+    }
+}
+.cactus {
+    width: 20px;
+    height: 40px;
+    background: rgb(93, 159, 161);
+    position: relative;
+    top: 200px;
+    left: 680px;
+    animation: move 1s linear infinite;
+}
+@keyframes move {
+    from {
+        left: 680px; 
+    }
+    to {
+        left: 0px;
     }
 }
