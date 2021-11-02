@@ -17,13 +17,13 @@
 }
 @keyframes jump {
     0% {
-        top: 242px;
+        top: 240px;
     }
     50% {
-        top: 165px;
+        top: 160px;
     }
     100% {
-        top: 242px;
+        top: 240px;
     }
 }
 .cactus {

@@ -1,4 +1,5 @@
 const dino = document.getElementById('dinosaur');
+const cactus = document.getElementById('cactus');
 
 function jump() {
     if (dino.classList !== 'jump') {
@@ -10,6 +11,20 @@ function jump() {
     }
 };
 
+let isAlive = setInterval(() => {
+    //*get current dino Y position
+    let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue('top'));
+    
+    //*get current cactus X position
+    let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue('left'));
+
+    //detect collision
+    if (cactusLeft < 60 && cactusLeft > 0 && dinoTop >= 210 ) {
+        //collision
+        alert('GAME OVER');
+    }
+}, 10);
+
 document.addEventListener('keydown', function (event) {
-    jump();
+    jump();  
 });
