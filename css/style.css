@@ -11,7 +11,9 @@
     background: #111;
     left: 0px;
     top: 242px;
-    animation: jump 0.5s linear;
+}
+.jump {
+    animation: jump 0.3s linear;
 }
 @keyframes jump {
     0% {
