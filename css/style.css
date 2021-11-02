@@ -101,3 +101,43 @@
         left: -100px;
     }
 }
+.cloud-1 {
+    width: 30px;
+    height: 25px;
+    background: #fff;
+    position: relative;
+    top: -300px;
+    left: 705px;
+    border-radius: 50%;
+    animation: cloud 11s linear infinite normal running 4s ;
+}
+.cloud-1::before {
+    display: inline-block;
+    width: 22px;
+    height: 20px;
+    content: '';
+    background: #fff;
+    position: relative;
+    left: -10px;
+    top: 5px;
+    border-radius: 50%;
+}
+.cloud-1::after {
+    display: inline-block;
+    width: 22px;
+    height: 20px;
+    content: '';
+    background: #fff;
+    position: relative;
+    left: 19px;
+    top: -19px;
+    border-radius: 50%;
+}
+@keyframes cloud {
+    from {
+        left: 700px;
+    }
+    to {
+        left: -200px;
+    }
+}
