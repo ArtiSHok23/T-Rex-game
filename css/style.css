@@ -1,18 +1,26 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.wrapper {
-    padding-top: 200px;
-}
 .border {
     border: 3px solid #111;
-    height: 400px;
-    width: 1400px;
+    height: 300px;
+    width: 700px;
     margin: 0 auto;
 }
 .dinosaur {
     position: relative;
-    height: 30px;
+    height: 60px;
+    width: 60px;
+    background: #111;
+    left: 0px;
+    top: 242px;
+    animation: jump 0.5s linear;
+}
+@keyframes jump {
+    0% {
+        top: 242px;
+    }
+    50% {
+        top: 162px;
+    }
+    100% {
+        top: 242;
+    }
 }
